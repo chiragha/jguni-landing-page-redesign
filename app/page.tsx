@@ -6,6 +6,9 @@ import About from "@/components/About";
 import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader";
 import Programs from "@/components/Programs";
+import Strength from "@/components/Strength";
+import AdmissionPopup from "@/components/AdmissionPopup";
+import Leaders from "@/components/Leaders";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -23,11 +26,14 @@ useEffect(() => {
 
     {!loading && (
       <>
+        <AdmissionPopup />
         <TopBar />
         <Navbar />
         <Hero />
         <About />
         <Programs />
+        <Strength />
+        <Leaders />
       </>
     )}
   </>

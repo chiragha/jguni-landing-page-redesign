@@ -57,25 +57,70 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-6 pt-10 pb-20 lg:pt-16 lg:pb-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Social Media Icons */}
-          {/* Social Media Icons */}
-          <div className="hidden lg:flex fixed left-0 top-1/2 -translate-y-1/2 z-50 flex-col  gap-4">
+
+          <div className="hidden xl:flex fixed left-0 top-1/2 -translate-y-1/2 z-[60] flex-col gap-3">
             <a
               href="#"
-              className="w-12 h-12 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:scale-110 transition duration-300"
+              className="
+w-11 h-11
+rounded-r-full
+bg-white/90
+backdrop-blur-xl
+border border-gray-200
+shadow-lg
+flex items-center justify-center
+text-slate-700
+hover:text-white
+hover:bg-gradient-to-r
+hover:from-blue-600
+hover:to-purple-600
+hover:scale-110
+transition-all duration-300
+"
             >
               <FaInstagram size={18} />
             </a>
 
             <a
               href="#"
-              className="w-12 h-12 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:scale-110 transition duration-300"
+              className="
+w-11 h-11
+rounded-r-full
+bg-white/90
+backdrop-blur-xl
+border border-gray-200
+shadow-lg
+flex items-center justify-center
+text-slate-700
+hover:text-white
+hover:bg-gradient-to-r
+hover:from-blue-600
+hover:to-purple-600
+hover:scale-110
+transition-all duration-300
+"
             >
               <FaFacebookF size={18} />
             </a>
 
             <a
               href="#"
-              className="w-12 h-12 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:scale-110 transition duration-300"
+              className="
+w-11 h-11
+rounded-r-full
+bg-white/90
+backdrop-blur-xl
+border border-gray-200
+shadow-lg
+flex items-center justify-center
+text-slate-700
+hover:text-white
+hover:bg-gradient-to-r
+hover:from-blue-600
+hover:to-purple-600
+hover:scale-110
+transition-all duration-300
+"
             >
               <FaLinkedinIn size={18} />
             </a>
@@ -164,7 +209,7 @@ export default function Hero() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
+                src="/circle.avif"
                 alt="Student"
                 className="w-[250px] h-[250px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] lg:w-[450px] lg:h-[450px] rounded-full object-cover border-[10px] border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
               />
@@ -180,7 +225,7 @@ export default function Hero() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-             className="absolute top-0 left-1/2 -translate-x-1/2 md:left-8 md:translate-x-0 z-20 scale-75 sm:scale-90 md:scale-100 scale-75 sm:scale-90 md:scale-100"
+            className="hidden lg:block absolute top-10 left-8 z-20"
             >
               <div className="bg-white rounded-3xl px-5 py-4 shadow-2xl flex items-center gap-4 min-w-[220px]">
                 <div className="text-3xl">🎓</div>
@@ -202,7 +247,7 @@ export default function Hero() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="absolute bottom-10 left-2 sm:left-5 z-20 scale-75 sm:scale-90 md:scale-100"
+              className="hidden lg:block absolute bottom-10 left-5 z-20"
             >
               <div className="bg-white rounded-3xl px-5 py-4 shadow-2xl flex items-center gap-4 min-w-[220px]">
                 <div className="text-3xl">📚</div>
@@ -224,7 +269,7 @@ export default function Hero() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-             className="absolute bottom-2 right-2 sm:right-5 z-20 scale-75 sm:scale-90 md:scale-100"
+              className="hidden lg:block absolute bottom-0 right-5 z-20"
             >
               <div className="bg-white rounded-3xl px-5 py-4 shadow-2xl flex items-center gap-4 min-w-[220px]">
                 <div className="text-3xl">⭐</div>
