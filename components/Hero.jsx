@@ -166,7 +166,7 @@ export default function Hero() {
                 }}
                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
                 alt="Student"
-                className="w-[320px] h-[320px] md:w-[450px] md:h-[450px] rounded-full object-cover border-[10px] border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
+                className="w-[250px] h-[250px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] lg:w-[450px] lg:h-[450px] rounded-full object-cover border-[10px] border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
               />
             </div>
 
@@ -180,7 +180,7 @@ export default function Hero() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="absolute top-0 md:top-10 left-1/2 -translate-x-1/2 md:left-8 md:translate-x-0 z-20"
+             className="absolute top-0 left-1/2 -translate-x-1/2 md:left-8 md:translate-x-0 z-20 scale-75 sm:scale-90 md:scale-100 scale-75 sm:scale-90 md:scale-100"
             >
               <div className="bg-white rounded-3xl px-5 py-4 shadow-2xl flex items-center gap-4 min-w-[220px]">
                 <div className="text-3xl">🎓</div>
@@ -202,7 +202,7 @@ export default function Hero() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="absolute bottom-8 left-0 md:left-5 z-20"
+              className="absolute bottom-10 left-2 sm:left-5 z-20 scale-75 sm:scale-90 md:scale-100"
             >
               <div className="bg-white rounded-3xl px-5 py-4 shadow-2xl flex items-center gap-4 min-w-[220px]">
                 <div className="text-3xl">📚</div>
@@ -224,7 +224,7 @@ export default function Hero() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="absolute bottom-0 right-0 md:right-5 z-20"
+             className="absolute bottom-2 right-2 sm:right-5 z-20 scale-75 sm:scale-90 md:scale-100"
             >
               <div className="bg-white rounded-3xl px-5 py-4 shadow-2xl flex items-center gap-4 min-w-[220px]">
                 <div className="text-3xl">⭐</div>
