@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader";
+import Programs from "@/components/Programs";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ useEffect(() => {
         <Navbar />
         <Hero />
         <About />
+        <Programs />
       </>
     )}
   </>
