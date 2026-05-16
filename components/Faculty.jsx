@@ -160,11 +160,18 @@ export default function Faculty() {
           font-weight: 700;
         }
 
-        @media (max-width: 768px) {
-          .faculty-slider .swiper-slide-active {
-            transform: scale(1);
-          }
-        }
+       @media (max-width: 768px) {
+
+  .faculty-slider .swiper-slide-active {
+    transform: scale(1);
+  }
+
+  /* Hide Navigation Arrows */
+  .faculty-slider .swiper-button-next,
+  .faculty-slider .swiper-button-prev {
+    display: none !important;
+  }
+}
       `}</style>
     </section>
   );
