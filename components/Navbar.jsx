@@ -23,14 +23,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* DESKTOP MENU */}
-          <div className="hidden md:flex items-center gap-8 relative">
+          <div className="hidden lg:flex items-center gap-8 relative">
             {/* PROGRAMS */}
             <div
               className="relative"
               onMouseEnter={() => setShowPrograms(true)}
               onMouseLeave={() => setShowPrograms(false)}
             >
-              <button className="flex items-center gap-1 whitespace-nowrap text-gray-700 font-medium hover:text-blue-600 transition duration-300 relative group">
+              <button className="flex items-center gap-1  text-gray-700 font-medium hover:text-blue-600 transition duration-300 relative group">
                 Programmes
                 <ChevronDown
                   size={18}
@@ -50,7 +50,7 @@ export default function Navbar() {
               <a
                 key={item}
                 href="#"
-                className="text-gray-700 font-medium hover:text-blue-600 transition duration-300 relative group"
+              className="whitespace-nowrap text-gray-700 font-medium hover:text-blue-600 transition duration-300 relative group"
               >
                 {item}
 
