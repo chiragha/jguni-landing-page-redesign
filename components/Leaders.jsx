@@ -19,7 +19,7 @@ const leaders = [
   {
     name: "Prof. David Miller",
     role: "Dean of Academics",
-    image: "/leader2.avif",
+    image: "/Leader2.avif",
     description:
       "Driving academic excellence with research and practical learning.",
   },
