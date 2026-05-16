@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 import { Clock3, Users, ArrowRight } from "lucide-react";
 
@@ -68,7 +67,7 @@ export default function Programs() {
           </p>
         </motion.div>
 
-        {/* Cards */}
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {programs.map((program, index) => (
             <motion.div
@@ -93,9 +92,9 @@ export default function Programs() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               </div>
 
-              {/* Content */}
+            
               <div className="p-6 flex flex-col flex-1">
-                {/* Top Content */}
+            
                 <div className="flex-grow">
                   <h3 className="text-xl font-bold text-slate-900">
                     {program.title}
@@ -106,9 +105,9 @@ export default function Programs() {
                   </p>
                 </div>
 
-                {/* Bottom Section */}
+             
                 <div className="mt-auto">
-                  {/* Stats */}
+               
                   <div className="flex justify-between text-sm text-slate-500 border-t border-gray-100 pt-5 mb-5">
                     <div className="flex items-center gap-2">
                       <Clock3 size={16} />
@@ -121,8 +120,8 @@ export default function Programs() {
                     </div>
                   </div>
 
-                  {/* Button */}
-                  <button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-full font-medium hover:scale-[1.03] transition duration-300">
+              
+                  <button className="w-full cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-full font-medium hover:scale-[1.03] transition duration-300">
                     Explore Program
                     <ArrowRight size={18} />
                   </button>

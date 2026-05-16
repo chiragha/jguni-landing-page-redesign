@@ -9,6 +9,7 @@ import Programs from "@/components/Programs";
 import Strength from "@/components/Strength";
 import AdmissionPopup from "@/components/AdmissionPopup";
 import Leaders from "@/components/Leaders";
+import Faculty from "@/components/Faculty";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ useEffect(() => {
         <Programs />
         <Strength />
         <Leaders />
+        <Faculty />
       </>
     )}
   </>

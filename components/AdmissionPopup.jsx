@@ -40,7 +40,7 @@ export default function AdmissionPopup() {
               {/* Close Button */}
               <button
                 onClick={() => setShowPopup(false)}
-                className="absolute top-4 right-4 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition"
+                className="absolute cursor-pointer text-black font-bold top-4 right-4 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition"
               >
                 <X size={20} />
               </button>
@@ -52,7 +52,7 @@ export default function AdmissionPopup() {
                   <GraduationCap size={38} />
                 </div>
 
-                <h2 className="text-3xl font-bold text-slate-900">
+                <h2 className="text-3xl  font-bold text-slate-900">
                   Admissions Open
                 </h2>
 
@@ -63,13 +63,13 @@ export default function AdmissionPopup() {
 
                 {/* Buttons */}
                 <div className="mt-7 flex flex-col sm:flex-row gap-3">
-                  <button className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-full font-medium hover:scale-[1.02] transition duration-300">
+                  <button className="flex-1 cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-full font-medium hover:scale-[1.02] transition duration-300">
                     Apply Now
                   </button>
 
                   <button
                     onClick={() => setShowPopup(false)}
-                    className="flex-1 border border-slate-300 py-3 rounded-full font-medium hover:bg-slate-100 transition"
+                    className="flex-1 text-black font-medium border cursor-pointer border-slate-300 py-3 rounded-full font-medium hover:bg-slate-100 transition"
                   >
                     Maybe Later
                   </button>

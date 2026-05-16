@@ -45,18 +45,18 @@ export default function Hero() {
           }}
         />
       </AnimatePresence>
-      {/* Overlay */}
+  
       <div className="absolute inset-0 bg-slate-950/30" />
 
       <div className="absolute inset-0 bg-gradient-to-r from-slate-950/50 via-slate-900/35 to-slate-950/20" />
 
-      {/* Blur Effects */}
+
       <div className="absolute top-20 left-10 h-72 w-72 rounded-full bg-blue-600/20 blur-[100px]" />
       <div className="absolute bottom-10 right-10 h-72 w-72 rounded-full bg-purple-600/20 blur-[100px]" />
 
       <div className="relative max-w-7xl mx-auto px-6 pt-10 pb-20 lg:pt-16 lg:pb-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Social Media Icons */}
+      
 
           <div className="hidden xl:flex fixed left-0 top-1/2 -translate-y-1/2 z-[60] flex-col gap-3">
             <a
@@ -131,13 +131,12 @@ transition-all duration-300
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* Trust Badge */}
+ 
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-md rounded-full px-4 py-2 text-white mb-6">
               <Star size={16} className="text-yellow-400" />
               <span className="text-sm">Trusted by 10,000+ Students</span>
             </div>
 
-            {/* Heading */}
             <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
               Empowering
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
@@ -148,28 +147,27 @@ transition-all duration-300
               Through Smart Education
             </h1>
 
-            {/* Paragraph */}
+ 
             <p className="text-gray-300 text-lg mt-6 max-w-xl leading-relaxed">
               Experience modern learning, industry-ready programs, expert
               mentorship, and limitless opportunities for future success.
             </p>
 
-            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               {/* Get Started */}
-              <button className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 px-7 py-4 rounded-full text-white font-semibold shadow-xl hover:scale-105 transition duration-300">
+              <button className="flex cursor-pointer items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 px-7 py-4 rounded-full text-white font-semibold shadow-xl hover:scale-105 transition duration-300">
                 Get Started
                 <ArrowRight size={18} />
               </button>
 
-              {/* Watch Demo */}
-              <button className="flex items-center justify-center gap-2 border border-white/30 bg-white/10 backdrop-blur-md px-7 py-4 rounded-full text-white hover:bg-white/20 transition duration-300">
+      
+              <button className="flex cursor-pointer items-center justify-center gap-2 border border-white/30 bg-white/10 backdrop-blur-md px-7 py-4 rounded-full text-white hover:bg-white/20 transition duration-300">
                 <PlayCircle size={18} />
                 Watch Demo
               </button>
             </div>
 
-            {/* Stats Cards */}
+
             <div className="flex flex-wrap gap-4 mt-10">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl px-5 py-4 text-white">
                 <h3 className="text-2xl font-bold">4.9★</h3>
@@ -183,7 +181,7 @@ transition-all duration-300
             </div>
           </motion.div>
 
-          {/* RIGHT IMAGE */}
+
           <motion.div
             initial={{
               opacity: 0,
@@ -215,7 +213,7 @@ transition-all duration-300
               />
             </div>
 
-            {/* Top Floating Card */}
+ 
             <motion.div
               animate={{
                 y: [0, -10, 0],
@@ -237,7 +235,7 @@ transition-all duration-300
               </div>
             </motion.div>
 
-            {/* Bottom Left Card */}
+
             <motion.div
               animate={{
                 y: [0, 12, 0],
@@ -259,7 +257,6 @@ transition-all duration-300
               </div>
             </motion.div>
 
-            {/* Bottom Right Card */}
             <motion.div
               animate={{
                 x: [0, 8, 0],
@@ -284,22 +281,48 @@ transition-all duration-300
         </div>
       </div>
 
-      {/* Marquee */}
-      <div className="relative border-t border-white/10 bg-white/5 backdrop-blur-md overflow-hidden py-5">
-        {/* Left Fade */}
-        <div className="absolute left-0 top-0 h-full w-28 bg-gradient-to-r from-slate-950 to-transparent z-10" />
+    {/* Marquee Section */}
+<div className="relative overflow-hidden py-6 border-t border-white/10 bg-white/10 backdrop-blur-xl">
 
-        {/* Right Fade */}
-        <div className="absolute right-0 top-0 h-full w-28 bg-gradient-to-l from-slate-950 to-transparent z-10" />
 
-        <div className="flex whitespace-nowrap animate-marquee gap-12 text-white font-medium text-lg">
-          {[...marqueeItems, ...marqueeItems].map((item, index) => (
-            <span key={index}>{item}</span>
-          ))}
-        </div>
+  <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-70" />
+
+
+  <div className="absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent z-10" />
+
+ 
+  <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-slate-950 via-slate-950/80 to-transparent z-10" />
+
+ 
+  <div className="flex whitespace-nowrap animate-marquee gap-5">
+
+    {[...marqueeItems, ...marqueeItems].map((item, index) => (
+      <div
+        key={index}
+        className="
+          flex items-center gap-2
+          px-5 py-3
+          rounded-full
+          bg-white/10
+          border border-white/10
+          backdrop-blur-lg
+          text-white
+          text-sm md:text-base
+          font-medium
+          shadow-lg
+          hover:bg-white/20
+          transition-all duration-300
+        "
+      >
+        <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 animate-pulse" />
+        {item}
       </div>
+    ))}
 
-      {/* Floating Chat Button */}
+  </div>
+</div>
+
+
       <div className="fixed bottom-6 right-6 z-50">
         <button className="group flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-4 rounded-full shadow-2xl hover:scale-105 transition duration-300 animate-pulse">
           <MessageCircle size={22} />

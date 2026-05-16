@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 
 const leaders = [
@@ -31,7 +30,7 @@ export default function Leaders() {
     <section className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Heading */}
+       
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +55,7 @@ export default function Leaders() {
           </p>
         </motion.div>
 
-        {/* Leader Cards */}
+  
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-16">
           {leaders.map((leader, index) => (
             <motion.div
@@ -70,7 +69,7 @@ export default function Leaders() {
               viewport={{ once: true }}
               className="group bg-slate-50 rounded-[28px] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
             >
-              {/* Image */}
+        
               <div className="overflow-hidden">
                 <img
                   src={leader.image}
@@ -79,7 +78,7 @@ export default function Leaders() {
                 />
               </div>
 
-              {/* Content */}
+          
               <div className="p-6 text-center">
                 <h3 className="text-xl font-bold text-slate-900">
                   {leader.name}
@@ -93,8 +92,8 @@ export default function Leaders() {
                   {leader.description}
                 </p>
 
-                {/* Button */}
-                <button className="mt-5 px-5 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium hover:scale-105 transition duration-300">
+       
+                <button className="mt-5 cursor-pointer px-5 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium hover:scale-105 transition duration-300">
                   View Profile
                 </button>
               </div>

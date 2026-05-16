@@ -20,7 +20,7 @@ export default function About() {
           >
             {/* Main Image */}
             <img
-              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop"
+              src="/about.avif"
               alt="Students"
               className="rounded-[40px] shadow-2xl object-cover w-full h-[500px]"
             />
@@ -53,12 +53,12 @@ export default function About() {
             viewport={{ once: true }}
           >
 
-            {/* Label */}
+            
             <div className="inline-flex items-center rounded-full bg-blue-50 border border-blue-100 px-4 py-2 text-blue-700 text-sm font-medium mb-6">
               ABOUT JGUNI
             </div>
 
-            {/* Heading */}
+        
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
               Building Future Careers Through
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -66,7 +66,7 @@ export default function About() {
               </span>
             </h2>
 
-            {/* Paragraph */}
+        
             <p className="text-slate-600 text-lg mt-6 leading-relaxed">
               We provide world-class education with modern learning
               experiences, industry partnerships, and expert faculty
@@ -126,7 +126,7 @@ export default function About() {
             </div>
 
             {/* CTA */}
-            <button className="mt-10 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-7 py-4 rounded-full font-medium shadow-lg hover:scale-105 transition duration-300">
+            <button className="mt-10 cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 text-white px-7 py-4 rounded-full font-medium shadow-lg hover:scale-105 transition duration-300">
               Discover More
             </button>
           </motion.div>

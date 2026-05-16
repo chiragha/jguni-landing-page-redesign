@@ -1,5 +1,4 @@
 "use client";
-
 import { Search, Phone, GraduationCap } from "lucide-react";
 
 export default function TopBar() {
@@ -8,7 +7,7 @@ export default function TopBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between gap-4">
 
-          {/* Left - Search */}
+      
           <div className="hidden md:flex flex-1 max-w-xs">
             <div className="relative w-full">
               <Search
@@ -24,7 +23,7 @@ export default function TopBar() {
             </div>
           </div>
 
-          {/* Center - Logo */}
+       
           <div className="flex items-center gap-2 text-center">
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-full text-white">
               <GraduationCap size={22} />
@@ -40,7 +39,7 @@ export default function TopBar() {
             </div>
           </div>
 
-          {/* Right Section */}
+       
           <div className="flex items-center gap-3">
 
             {/* Phone */}
@@ -51,13 +50,11 @@ export default function TopBar() {
               </span>
             </div>
 
-            {/* Enquiry Button */}
-            <button className="hidden sm:block border border-gray-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition duration-300">
+            <button className="hidden sm:block border cursor-pointer text-black border-gray-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-gradient-to-r  from-blue-600 to-purple-600 transition duration-300">
               Enquiry
             </button>
 
-            {/* Admission Button */}
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-2 rounded-full text-sm font-medium shadow-md hover:scale-105 transition duration-300">
+            <button className="cursor-pointer bg-gradient-to-r  from-blue-600 to-purple-600 text-white px-5 py-2 rounded-full text-sm font-medium shadow-md hover:scale-105 transition duration-300">
               Apply Now
             </button>
           </div>

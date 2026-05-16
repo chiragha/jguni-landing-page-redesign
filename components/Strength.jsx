@@ -48,7 +48,7 @@ export default function Strength() {
     <section className="py-20 bg-slate-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Heading */}
+     
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export default function Strength() {
           </p>
         </motion.div>
 
-        {/* Cards */}
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-14">
           {strengths.map((item, index) => {
             const Icon = item.icon;
@@ -90,7 +90,7 @@ export default function Strength() {
                 viewport={{ once: true }}
                 className="group bg-white rounded-[24px] p-5 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500"
               >
-                {/* Icon */}
+            
                 <motion.div
                   animate={{
                     y: [0, -5, 0],
