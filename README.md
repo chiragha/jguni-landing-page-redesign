@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JGUNI Landing Page Redesign
 
-## Getting Started
+A modern and fully responsive university landing page redesign built using **Next.js**, **Tailwind CSS**, and **Framer Motion**. This project focuses on creating a clean UI, smooth animations, reusable components, and responsive layouts across mobile, tablet, and desktop devices.
 
-First, run the development server:
+## 🚀 Live Demo
+
+https://jguni-landing-page-redesign.vercel.app/
+
+## 📂 GitHub Repository
+
+https://github.com/chiragha/jguni-landing-page-redesign
+
+
+## 📌 Project Overview
+
+The goal of this project was to redesign a university landing page with a modern user interface and better user experience. The website includes smooth animations, responsive navigation, structured content sections, and optimized layouts for different screen sizes.
+
+The application follows a **component-based architecture** for better scalability and maintainability.
+
+## ✨ Features
+
+* Fully Responsive Design (Mobile, Tablet, Desktop)
+* Modern UI/UX Design
+* Reusable React Components
+* Responsive Navbar with Mobile Menu
+* Smooth Animations using Framer Motion
+* Clean Layout Structure
+* Optimized for Performance
+* Sticky Navigation Bar
+* Interactive CTA Sections
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+* Next.js
+* React.js
+* Tailwind CSS
+* Framer Motion
+* Lucide React Icons
+
+## 📁 Folder Structure
+
+```bash
+components/
+│── Navbar.jsx
+│── Hero.jsx
+│── TopBar.jsx
+│── Footer.jsx
+
+app/
+│── page.js
+│── layout.js
+
+public/
+│── images.avif
+```
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/chiragha/jguni-landing-page-redesign.git
+```
+
+Move to project directory:
+
+```bash
+cd jguni-landing-page-redesign
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 🌐 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The project is deployed on **Vercel**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Live URL:
+https://jguni-landing-page-redesign.vercel.app/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👩‍💻 Author
 
-## Deploy on Vercel
+**Shivani Sinha**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GitHub: https://github.com/chiragha
