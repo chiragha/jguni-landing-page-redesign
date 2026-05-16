@@ -30,7 +30,7 @@ export default function Navbar() {
               onMouseEnter={() => setShowPrograms(true)}
               onMouseLeave={() => setShowPrograms(false)}
             >
-              <button className="flex items-center gap-1 text-gray-700 font-medium hover:text-blue-600 transition duration-300 relative group">
+              <button className="flex items-center gap-1 whitespace-nowrap text-gray-700 font-medium hover:text-blue-600 transition duration-300 relative group">
                 Programmes
                 <ChevronDown
                   size={18}
@@ -60,7 +60,7 @@ export default function Navbar() {
           </div>
 
           {/* BUTTON */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-2 rounded-full text-sm font-medium shadow-md hover:scale-105 transition duration-300">
               Explore Programs
             </button>
@@ -68,7 +68,7 @@ export default function Navbar() {
 
           {/* MOBILE MENU BUTTON */}
           <button
-            className="md:hidden text-gray-800"
+           className="lg:hidden text-gray-800"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -78,7 +78,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-lg">
+  <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg">
           <div className="flex flex-col px-6 py-5 gap-5">
             <div className="w-full">
               {/* MOBILE PROGRAM BUTTON */}
